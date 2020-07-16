@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main ( )
+{
+  float total_hargaBarang, disc, total_pembelian;
+  cout << "================ UJIAN AKHIR SEMESTER 2019/2020 ================";
+  cout << endl;
+  cout << endl;
+  cout << " Masukkan total pembelian = ";
+  cin >> total_hargaBarang;
+  disc = 10;
+  if ( total_hargaBarang > 500000 )
+  {
+    disc = 0.1 * total_hargaBarang;
+  }
+  total_pembelian = total_hargaBarang - disc;
+  cout << " Total Diskon = " << disc;
+  cout << endl;
+  cout << "Total Pembelian Setelah diberikan Diskon = " << total_pembelian;
+  
+  return 0;
+}
